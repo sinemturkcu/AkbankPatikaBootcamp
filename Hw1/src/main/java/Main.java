@@ -1,3 +1,7 @@
+import entity.*;
+import entity.factory.*;
+import service.HouseService;
+
 import java.util.List;
 
 public class Main {
@@ -36,7 +40,7 @@ public class Main {
         int totalVillaPrice = houseService.getTotalPrice(houseService.filterByType(VillaImpl.class));
         int totalResortPrice = houseService.getTotalPrice(houseService.filterByType(ResortImpl.class));
         int totalAllPrice = houseService.getTotalPrice(houseList);
-        System.out.println("Total House Price: " + totalHomePrice);
+        System.out.println("Total entity.House Price: " + totalHomePrice);
         System.out.println("Total Villa Price: " + totalVillaPrice);
         System.out.println("Total Resort Price: " + totalResortPrice);
         System.out.println("Total All Price: " + totalAllPrice);

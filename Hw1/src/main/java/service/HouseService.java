@@ -1,3 +1,10 @@
+package service;
+
+import entity.HomeImpl;
+import entity.House;
+import entity.ResortImpl;
+import entity.VillaImpl;
+
 import java.util.ArrayList;
 import java.util.List;
 

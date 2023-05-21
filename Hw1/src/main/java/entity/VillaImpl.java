@@ -1,15 +1,19 @@
-// Concrete product - Home
-public class HomeImpl implements House{
+package entity;
+
+import entity.House;
+
+// Concrete product - Villa
+public class VillaImpl implements House {
     private int price;
     private int meterSquare;
     private int numberOfRooms;
     private int numberOfHalls;
 
-    public HomeImpl(int price, int meterSquare,int numberOfRooms, int numberOfHalls) {
+    public VillaImpl(int price, int meterSquare, int numberOfRooms, int numberOfHalls) {
         this.price = price;
         this.meterSquare = meterSquare;
-        this.numberOfHalls=numberOfHalls;
-        this.numberOfRooms=numberOfRooms;
+        this.numberOfRooms = numberOfRooms;
+        this.numberOfHalls = numberOfHalls;
     }
 
     @Override
@@ -31,6 +35,4 @@ public class HomeImpl implements House{
     public int getNumberOfRooms() {
         return numberOfRooms;
     }
-
-
 }

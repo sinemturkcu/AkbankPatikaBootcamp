@@ -1,5 +1,9 @@
+package entity;
+
+import entity.House;
+
 // Concrete product - Resort
-public class ResortImpl implements House{
+public class ResortImpl implements House {
     private int price;
     private int meterSquare;
     private int numberOfRooms;
