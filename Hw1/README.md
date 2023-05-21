@@ -21,5 +21,4 @@ The HouseService class acts as a service class, providing various methods to int
 
 By utilizing the Factory design pattern, the code adheres to good software engineering principles, such as modularity, encapsulation, and extensibility. The Factory pattern allows for centralized creation of objects, reducing code duplication and promoting code reusability. Overall, the code design follows clean code principles, making it more maintainable and scalable for future enhancements.
 
-# Output of code
-![image](https://github.com/sinemturkcu/AkbankPatikaBootcamp/assets/42895382/d95215ef-935c-4d9f-99da-bd0fd39ea652)
+
