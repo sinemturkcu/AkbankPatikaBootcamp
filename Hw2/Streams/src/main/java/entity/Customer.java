@@ -9,12 +9,12 @@ public class Customer {
     private int id;
     private String firstName;
     private String lastName;
-    private Integer age;
+    private int age;
     private String registerDate;
 
     private List<Order> orders = new ArrayList<>();
 
-    public Customer(String firstName, String lastName, Integer age, String registerDate, List<Order> orders) {
+    public Customer(String firstName, String lastName, int age, String registerDate, List<Order> orders) {
         this.id = atomicInteger.incrementAndGet();
         this.firstName = firstName;
         this.lastName = lastName;
@@ -23,7 +23,7 @@ public class Customer {
         this.orders = orders;
     }
 
-    public Customer(String firstName, String lastName, Integer age, String registerDate) {
+    public Customer(String firstName, String lastName, int age, String registerDate) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;

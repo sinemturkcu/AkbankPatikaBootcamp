@@ -61,4 +61,15 @@ public class Order {
     public String getIndustry() {
         return industry;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", price=" + price +
+                ", orderDate='" + orderDate + '\'' +
+                ", customer=" + customer +
+                ", industry='" + industry + '\'' +
+                '}';
+    }
 }

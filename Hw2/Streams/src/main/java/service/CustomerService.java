@@ -22,7 +22,7 @@ public class CustomerService {
     }
 
     public List<Customer> getAllCustomers() {
-        return customers;
+        return customers.stream().toList();
     }
 
     public List<Customer> getCustomersWithNameContainingLetter(String letter) {
@@ -30,7 +30,4 @@ public class CustomerService {
                 .filter(customer -> customer.getFirstName().contains(letter) || customer.getLastName().contains(letter))
                 .collect(Collectors.toList());
     }
-
-
-
 }

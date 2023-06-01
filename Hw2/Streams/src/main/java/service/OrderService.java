@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 public class OrderService {
     private List<Order> orders = new ArrayList<>();
 
-    public OrderService(List<Order> orders, CustomerService customerService) {
+    public OrderService(CustomerService customerService) {
 
         Order order1 = new Order(1800.0, customerService.getAllCustomers().get(0), "Haziran ", "Industry A");
         Order order2 = new Order(200.0, customerService.getAllCustomers().get(1), "Temmuz", "Industry B");
